@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: awel
+    description: fonte dw no bq da Adventures Works
+    tables:
+      - name: person_address
+        columns:
+          - name: addressid
+            tests:
+              - unique
+              - not_null
+      - name: person_stateprovince 
+        columns:
+          - name: stateprovinceid
+            tests:
+              - unique
+              - not_null 
